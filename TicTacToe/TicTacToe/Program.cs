@@ -10,9 +10,12 @@ namespace TicTacToe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello welcome to TicTactoe Game");
-            TicTacToe.CreateBoard();
-            TicTacToe.PlayerInput();
+            Console.WriteLine("Welcome to Tic Toe Game");
+            TicTacToe obj = new TicTacToe();
+            obj.gameBoard();
+            obj.abillityToInput();
+            obj.showGameBoard();
+            
 
             Console.ReadLine();
             
